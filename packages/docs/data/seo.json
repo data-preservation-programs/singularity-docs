@@ -1,0 +1,12 @@
+{
+  "_": {
+    "title": "Singularity Docs",
+    "description": "📓 Documentation for Singularity",
+    "siteName": "Singularity Docs",
+    "ogImage": "/public/open-graph.jpg"
+  },
+  "*": {
+    "title": "Singularity - |title|",
+    "description": "|description|"
+  }
+}

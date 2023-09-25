@@ -1,0 +1,64 @@
+/**
+ * This file should NOT contain any styling (classes or IDs). It should only contain
+ * variables, functions, mixins, etc. If you want to override core utility functions
+ * or mixins, you can do it here by including the entity with the same name.
+ *
+ * Make sure to copy the corresponding variables from
+ * @/src/assets/scss/zero/utilities.scss prior to writing any SCSS declarations.
+ * This will ensure that this file is always in sync and correctly overriding the
+ * core theme.
+ */
+
+// /////////////////////////////////////////////////////////////////// Variables
+// -----------------------------------------------------------------------------
+// ===================================================================== Colours
+$codGray: #060606; // rgb(6, 6, 6)
+$mineShaftDark: #303030; // rgb(48, 48, 48)
+$mineShaftLight: #242424; // rgb(36, 36, 36)
+$alto: #D3D3D3; // rgb(211, 211, 211)
+$olivine: #A7C889; // rgb(167, 200, 137)
+$chardonnay: #FFC582; // rgb(255, 197, 130)
+$portage: #908EF6; // rgb(144, 142, 246)
+$sprout: #CBDDBB; // rgb(203, 221, 187)
+
+// ====================================================================== Themes
+:root {
+  --background-color: #{$codGray};
+  --background-color__secondary: #{$mineShaftLight};
+  // --theme-toggle__background-color: #{$wildSand};
+  // --theme-toggle__border-color: #{$alto};
+  // --theme-toggle__onHover: #{$codGray};
+  // --theme-toggle__icon__onHover: #{$wildSand};
+  --theme-color: #{$alto};
+  --theme-color__inverted: #{$codGray};
+  --divider: #{$mineShaftDark};
+  --link-color: #{$chardonnay};
+  --link-hover-color: #{$chardonnay};
+  --code__block__background-color: #{$mineShaftLight};
+  --code__inline__color: #{$alto};
+  --code__inline__background-color: #{$mineShaftLight};
+  --sidebar__title-color: #{$olivine};
+  --sidebar__title-color__active: #{$olivine};
+  --algolia-backdrop: #{$mineShaftLight};
+  --algolia-background: #{$codGray};
+  --algolia__searchbox__background-color: #{$mineShaftDark};
+  --algolia__hit__background-color: #{$mineShaftLight};
+  --algolia__hit__hover__color: #{$mineShaftDark};
+  // --algolia__highlight: #{$blueRibbon};
+  --api-explorer__http-status-code__background-color: #{$mineShaftLight};
+  --api-explorer__http-status-code__color: #{$portage};
+}
+
+// ===================================================================== Styling
+@mixin selection-light {
+  ::-moz-selection {
+    background: $sprout;
+    color: var(--theme-color__inverted);
+    -webkit-text-fill-color: var(--theme-color__inverted);
+  }
+  ::selection {
+    background: $sprout;
+    color: var(--theme-color__inverted);
+    -webkit-text-fill-color: var(--theme-color__inverted);
+  }
+}

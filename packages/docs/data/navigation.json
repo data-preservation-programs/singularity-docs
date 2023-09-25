@@ -6,19 +6,10 @@
       "label": "Docs"
     },
     {
-      "tag": "nuxt-link",
-      "to": "/",
+      "tag": "a",
+      "to": "https://singularity.storage/?section=how-it-works",
+      "target": "_blank",
       "label": "About"
-    },
-    {
-      "tag": "nuxt-link",
-      "to": "/",
-      "label": "Ecosystem"
-    },
-    {
-      "tag": "nuxt-link",
-      "to": "/",
-      "label": "API"
     }
   ],
   "toolbar": {

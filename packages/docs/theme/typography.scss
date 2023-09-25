@@ -1,0 +1,99 @@
+/**
+ * Make sure to copy the corresponding variables from
+ * @/src/assets/scss/zero/typography.scss prior to writing any typography declarations.
+ * This will ensure that this file is always in sync and correctly overriding the
+ * core theme.
+ */
+
+// ////////////////////////////////////////////////////////////////// Typography
+// -----------------------------------------------------------------------------
+// ==================================================================== Families
+$font_Primary: 'SuisseIntl', sans-serif, monospace;
+$font_Mono: 'SuisseIntlMono', sans-serif, monospace;
+
+$fontAssetPath: 'assets/scss/theme/fonts';
+
+// -------------------------------------------------------- Suisse International
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/suisse-intl/SuisseIntl-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/suisse-intl/SuisseIntl-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/suisse-intl/SuisseIntl-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/suisse-intl/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/suisse-intl/SuisseIntl-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/suisse-intl/SuisseIntl-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/suisse-intl/SuisseIntl-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+// --------------------------------------------------- Suisse International Mono
+@font-face {
+  font-family: 'SuisseIntlMono';
+  src: url('#{$fontAssetPath}/suisse-intl-mono/SuisseIntlMono-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// ///////////////////////////////////////////////////////// Basic Styles Mixins
+// -----------------------------------------------------------------------------
+@mixin h1 {
+  @include gradientText;
+  font-size: toRem(36);
+  line-height: leading(50, 36);
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+@mixin gradientText {
+  background: linear-gradient(to left, #D4D4D4 10%, #A6C888 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// ////////////////////////////////////////////////////////////////////// Sizing
+// -----------------------------------------------------------------------------
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: $olivine;
+}

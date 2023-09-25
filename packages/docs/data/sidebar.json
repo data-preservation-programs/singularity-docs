@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Content Sample",
+    "slug": "content-sample",
+    "icon": "",
+    "children": [
+      {
+        "type": "nuxt-link",
+        "href": "/simple-markdown",
+        "title": "Simple Markdown"
+      },
+      {
+        "type": "nuxt-link",
+        "href": "/preview-a-component",
+        "title": "Preview a component"
+      }
+    ]
+  },
+  {
+    "title": "API Sample",
+    "slug": "api-sample",
+    "icon": "",
+    "children": [
+      {
+        "type": "nuxt-link",
+        "href": "/introduction",
+        "title": "Introduction"
+      },
+      {
+        "type": "nuxt-link",
+        "href": "/datasets",
+        "title": "Datasets"
+      }
+    ]
+  }
+]

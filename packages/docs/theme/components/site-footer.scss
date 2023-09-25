@@ -1,0 +1,6 @@
+#site-footer {
+  .heading {
+    @include gradientText;
+    display: inline-block;
+  }
+}
