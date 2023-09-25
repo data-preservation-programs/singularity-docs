@@ -3,11 +3,7 @@
 
     <!-- ============================================================== Logo -->
     <NuxtLink to="/docs" class="logo-link">
-      <component
-        :is="useResolveDoczillaComponent('logo')"
-        v-if="useResolveDoczillaComponent('logo')"
-        class="logo" />
-      <Logo v-else class="logo" />
+      <component :is="useResolveDoczillaComponent('site-logo')" class="logo" />
     </NuxtLink>
 
     <!-- ========================================================= Nav links -->
@@ -105,10 +101,8 @@ if (content.value.length > 0) {
     transition: 150ms ease-in;
     transform: scale(1.05);
   }
-  :deep(path),
-  :deep(rect) {
+  :deep(path) {
     transition: fill 500ms;
-    fill: var(--theme-color);
   }
 }
 
