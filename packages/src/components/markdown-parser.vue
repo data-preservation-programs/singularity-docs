@@ -84,8 +84,8 @@ renderer.heading = function (text, level) {
 }
 
 renderer.code = function (code, language) {
-  const highlighted = language ?
-    hljs.highlight(code, { language }).value :
+  const languageInstalled = hljs.getLanguage(language)
+  const highlighted = language && languageInstalled ?
     hljs.highlightAuto(code).value
   return `<pre><code class="code-block">${highlighted}</code></pre>`
 }
