@@ -35,7 +35,7 @@
 
       <ButtonAlgoliaSearch />
 
-      <DropdownSelector :options="languageOptions" />
+      <!-- <DropdownSelector :options="languageOptions" /> -->
 
     </div>
 
