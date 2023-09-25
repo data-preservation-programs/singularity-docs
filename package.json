@@ -1,0 +1,24 @@
+{
+  "name": "@undone-labs/docs-starter",
+  "version": "1.0.0",
+  "description": "Get a docs site up and running fast 🚀",
+  "author": {
+    "name": "Agency Undone",
+    "email": "hello@agencyundone.com"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "npm run dev -w src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:undone-labs/docs-starter.git"
+  },
+  "engines": {
+    "node": ">=16.18.0"
+  },
+  "keywords": [],
+  "workspaces": [
+    "packages/src"
+  ]
+}
