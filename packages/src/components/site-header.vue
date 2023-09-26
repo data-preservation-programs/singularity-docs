@@ -35,7 +35,9 @@
 
       <ButtonAlgoliaSearch />
 
-      <!-- <DropdownSelector :options="languageOptions" /> -->
+      <DropdownSelector
+        v-if="languageSelectorVisible"
+        :options="languageOptions" />
 
     </div>
 
@@ -44,12 +46,15 @@
 
 <script setup>
 // ===================================================================== Imports
+import { storeToRefs } from 'pinia'
 import Header from '@/data/header'
 
 // ======================================================================== Data
+const generalStore = useGeneralStore()
+const { languageSelectorVisible } = storeToRefs(generalStore)
 const links = Header.navigation
 const githubUrl = Header.toolbar.github_url
-// const languageOptions = Navigation.toolbar.language_options
+const languageOptions = Header.toolbar.language_options
 
 const route = useRoute()
 const contentPath = `/docs/content${route.path}`
@@ -100,9 +105,6 @@ if (content.value.length > 0) {
   &:hover {
     transition: 150ms ease-in;
     transform: scale(1.05);
-  }
-  :deep(path) {
-    transition: fill 500ms;
   }
 }
 

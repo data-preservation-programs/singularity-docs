@@ -138,3 +138,9 @@
     </g>
   </svg>
 </template>
+
+<style lang="scss" scoped>
+path {
+  transition: fill 500ms;
+}
+</style>
