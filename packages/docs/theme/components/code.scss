@@ -1,0 +1,9 @@
+.code-wrapper {
+  button.copy-button {
+    color: var(--theme-color__inverted);
+    background-color: var(--theme-color);
+    &:hover {
+      background-color: var(--link-hover-color);
+    }
+  }
+}
