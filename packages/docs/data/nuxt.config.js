@@ -126,7 +126,7 @@ module.exports = {
   // ////////////////////////////////////////////////// [Module] @nuxtjs/algolia
   // ---------------------------------------------------------------------------
   algolia: {
-    disabled: false, // default: true
+    disable: false, // default: false
     apiKey: process.env.ALGOLIA_API_KEY,
     applicationId: process.env.ALGOLIA_APPLICATION_ID,
     indexName: `${process.env.ALGOLIA_INDEX_ID}__${env}`
