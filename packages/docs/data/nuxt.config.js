@@ -14,11 +14,6 @@ const baseUrls = {
 
 const frontendPort = 10090
 
-const seo = {
-  siteName: 'Singularity Docs',
-  description: '📓 Documentation for Singularity'
-}
-
 // ////////////////////////////////////////////////////////////////////// Export
 // -----------------------------------------------------------------------------
 module.exports = {
@@ -27,11 +22,7 @@ module.exports = {
   runtimeConfig: {
     public: {
       siteUrl: env === 'development' ? `${baseUrls[env]}:${frontendPort}` : baseUrls[env],
-      frontendUrl: env === 'development' ? `${baseUrls[env]}:${frontendPort}` : baseUrls[env],
-      serverFlag: env,
-      seo: {
-        siteName: seo.siteName
-      }
+      serverFlag: env
     }
   },
   // ////////////////////////////////////////////////////////// Server & Bundler
@@ -64,11 +55,9 @@ module.exports = {
   app: {
     // -------------------------------------------------------------------- head
     head: {
-      title: seo.siteName,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: seo.description },
         { name: 'msapplication-config', content: '/public/favicon/dark/browserconfig.xml' }
       ],
       link: [

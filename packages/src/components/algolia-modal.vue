@@ -177,7 +177,7 @@ const { activeResult } = storeToRefs(algoliaStore)
   mark {
     background-color: var(--theme-color);
     color: var(--theme-color__inverted);
-    padding: 0 toRem(2);
+    padding: 0 toRem(4);
     margin: 0 toRem(1);
   }
 }
